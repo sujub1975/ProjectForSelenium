@@ -6,12 +6,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPOM {
-	private WebDriver driver; 
+	private WebDriver driver;
 	
-	public LoginPOM(WebDriver driver) {
-		this.driver = driver; 
-		PageFactory.initElements(driver, this);
-	}
+    public LoginPOM(WebDriver driver) {
+        this.driver = driver; 
+        PageFactory.initElements(driver, this);
+    }
 	
 	@FindBy(id="login")
 	private WebElement userName; 
@@ -19,8 +19,9 @@ public class LoginPOM {
 	@FindBy(id="password")
 	private WebElement password;
 	
-	@FindBy(id="formLogin_submitAuth")
+	@FindBy(id="form-login_submitAuth") //formLogin_submitAuth
 	private WebElement loginBtn; 
+	
 	
 	public void sendUserName(String userName) {
 		this.userName.clear();
