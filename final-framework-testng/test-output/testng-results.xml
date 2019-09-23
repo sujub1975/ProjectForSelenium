@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31155" started-at="2019-09-09T11:56:30 IST" finished-at="2019-09-09T11:57:02 IST">
+  <suite name="Default suite" duration-ms="18619" started-at="2019-09-23T19:50:57 IST" finished-at="2019-09-23T19:51:15 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31155" started-at="2019-09-09T11:56:30 IST" finished-at="2019-09-09T11:57:02 IST">
-      <class name="com.training.sanity.tests.ELTC_020_Test">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.ELTC_020_Test@6321e813]" name="setUpBeforeClass" is-config="true" duration-ms="16" started-at="2019-09-09T11:56:30 IST" finished-at="2019-09-09T11:56:30 IST">
+    <test name="Default test" duration-ms="18619" started-at="2019-09-23T19:50:57 IST" finished-at="2019-09-23T19:51:15 IST">
+      <class name="com.training.sanity.tests.ELTC_046_Test">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.ELTC_046_Test@4973813a]" name="setUpBeforeClass" is-config="true" duration-ms="10040" started-at="2019-09-23T19:50:57 IST" finished-at="2019-09-23T19:51:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.ELTC_020_Test@6321e813]" name="setUp" is-config="true" duration-ms="10752" started-at="2019-09-09T11:56:31 IST" finished-at="2019-09-09T11:56:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.ELTC_020_Test@6321e813]" name="validLoginTest" duration-ms="20333" started-at="2019-09-09T11:56:41 IST" finished-at="2019-09-09T11:57:02 IST">
+        <test-method status="PASS" signature="validLoginTest()[pri:1, instance:com.training.sanity.tests.ELTC_046_Test@4973813a]" name="validLoginTest" duration-ms="4834" started-at="2019-09-23T19:51:07 IST" finished-at="2019-09-23T19:51:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-      </class> <!-- com.training.sanity.tests.ELTC_020_Test -->
+        <test-method status="PASS" signature="createCoursesCategoriesTest()[pri:2, instance:com.training.sanity.tests.ELTC_046_Test@4973813a]" name="createCoursesCategoriesTest" duration-ms="3692" started-at="2019-09-23T19:51:12 IST" finished-at="2019-09-23T19:51:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCoursesCategoriesTest -->
+      </class> <!-- com.training.sanity.tests.ELTC_046_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

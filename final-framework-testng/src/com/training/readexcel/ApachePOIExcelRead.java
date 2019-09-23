@@ -89,13 +89,19 @@ public class ApachePOIExcelRead {
 	}
 
 	public static void main(String[] args) {
-		String fileName = "C:/Users/Naveen/Desktop/Testing.xlsx";
+		String fileName = "C:/Testing.xlsx";
 		
 		for(String [] temp : new ApachePOIExcelRead().getExcelContent(fileName)){
 			for(String  tt : temp){
-				System.out.println(tt);
+				System.out.print(tt + " //// ");
 			}
+			System.out.println();
 		}
 
 	}
+//	while (rowIterator.hasNext()) {
+//        Row row = rowIterator.next();
+//        if(row.getRowNum() < 9){
+//               continue; //just skip the rows if row number is 0 or 1
+//              }
 }

@@ -31,4 +31,5 @@ public class GetConnection {
 	public static Connection getOracleConnection(DBBean dbBean) {
 		return null;
 	}
+	
 }
