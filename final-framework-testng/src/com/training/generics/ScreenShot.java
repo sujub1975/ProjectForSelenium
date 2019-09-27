@@ -76,7 +76,12 @@ public class ScreenShot {
 			TakesScreenshot takeScreenShot  = (TakesScreenshot) driver; 
 			File file = takeScreenShot.getScreenshotAs(OutputType.FILE);
 			
-			FileUtils.copyFile(file, new File(path +fileName+".png"));
+			String ss = path +fileName+".png";
+			
+//			System.out.println(ss);			
+//			FileUtils.copyFile(file, new File(path +fileName+".png"));
+			
+			FileUtils.copyFile(file, new File(ss));
 		} catch (WebDriverException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

@@ -8,8 +8,11 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.training.bean.LoginBean;
+import com.training.dao.ELearningDAO;
 import com.training.dataproviders.LoginDataProviders;
 import com.training.generics.GenericMethods;
 import com.training.generics.ScreenShot;
@@ -35,7 +38,7 @@ public class LoginDBTest {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
-		driver = DriverFactory.getDriver(DriverNames.FIREFOX);
+		driver = DriverFactory.getDriver(DriverNames.CHROME);
 		loginPOM = new LoginPOM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver);
@@ -59,7 +62,7 @@ public class LoginDBTest {
 		loginPOM.sendUserName(userName);
 		
 		loginPOM.sendPassword(password);
-		loginPOM.clickLoginBtn();
+		//loginPOM.clickLoginBtn();
 		
 		screenShot.captureScreenShot(userName);
 
